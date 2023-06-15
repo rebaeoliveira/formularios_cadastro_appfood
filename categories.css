@@ -1,0 +1,59 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 10px;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  margin-top: 50px;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+button {
+  display: block;
+  width: 108%;
+  padding: 10px;
+  background-color: #0f1dda;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #044417;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.error-message {
+  color: rgb(128, 8, 8);
+  margin-top: 5px;
+}
+
+.success-message {
+  color: green;
+  margin-top: 5px;
+}
