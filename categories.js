@@ -23,7 +23,7 @@ document.getElementById("categoryForm").addEventListener("submit", function(even
     .then(function(response) {
       if (response.ok) {
         alert("Dados cadastrados com sucesso!");
-        document.getElementById("categoriesForm").reset(); // Limpa os campos do formulário
+        document.getElementById("categoryForm").reset(); // Limpa os campos do formulário
         console.log(categoryData);
       } else {
         alert("Erro ao cadastrar os dados");

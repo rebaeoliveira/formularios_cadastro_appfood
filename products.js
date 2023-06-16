@@ -1,4 +1,4 @@
-function loadCategories() { // Carrega os dados cadastrados na categoria
+function loadCategory() { // Carrega os dados cadastrados na categoria
     fetch("http://localhost:4000/categories")
       .then(function(response) {
         if (response.ok) {
@@ -8,7 +8,7 @@ function loadCategories() { // Carrega os dados cadastrados na categoria
         }
       })
       .then(function(categories) {
-        var categorySelect = document.getElementById("categories");
+        var categorySelect = document.getElementById("category");
   
         // Limpa as opções existentes
         categorySelect.innerHTML = "";
@@ -58,5 +58,5 @@ function loadCategories() { // Carrega os dados cadastrados na categoria
   });
   
   // Chama a função para carregar as categorias
-  loadCategories();
+  loadCategory();
   
